@@ -1,0 +1,233 @@
+.block-img{
+    background: orange;
+    width: 100%;
+    margin-top: 50px;
+
+}
+.block-img{
+
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 700px;
+    overflow: scroll;
+}
+
+.block1{
+    background: orange;
+    position: relative;
+    left: 1060px;
+    display: flex;
+    align-items: center;
+}
+
+.block1-slider-img{
+    position: absolute; 
+    left: 560px;
+    bottom: -15px;
+    background: orange;
+    width: 640px;
+    height: 450px;
+    border-top-left-radius: 250px;
+    border-bottom-left-radius: 250px;
+    color: white;
+    gap: 50px;
+    display: flex;
+    .specialOffer{
+        text-align: end;
+        position: absolute;
+        left: 400px;
+        top: 120px;
+    }
+    .SUPER{
+       position: absolute;
+        left: 140px;
+        top: 150px;
+        font-size: 70px;
+    }
+   .sale{
+    position: absolute;
+    left:360px;
+    top: 180px;
+    font-size: 100px;
+
+   }
+}
+
+
+.block-img::-webkit-scrollbar{
+   display: none;
+}
+
+
+.blockeSearch{
+    text-align: center;
+    padding-bottom: 50px;
+}
+/* block-2 */
+
+
+
+
+.admin-2{
+display: flex;
+align-items: center;
+/* justify-content: center; */
+padding-top: 50px;
+overflow-x: scroll;
+gap: 50px;
+
+.block-admin{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    /* gap: 50px; */
+    img{
+        width: 230px;
+        height: 250px;
+    }
+    .btns{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 20px; 
+    }
+    .elBtn{
+        padding: 5px 10px;
+        outline: none;
+        cursor: pointer;
+        background: orange;
+        border: 2px solid yellow;
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+
+    }
+    
+
+}
+}
+.admin-2::-webkit-scrollbar{
+        display: none;
+}
+
+.seemoor{
+        width: 221px;
+        height: 60px;
+        border: none;
+        background: transparent;
+        border: 2px solid grey;
+        color: blue;
+}
+
+.blocks{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    overflow-x: scroll;
+    padding: 30px 0;
+  
+}
+.blocks::-webkit-scrollbar{
+    display: none;
+}
+.pop-1{
+display: flex;
+align-items: center;
+width: 200px;
+height: 60px;
+background: white;
+padding: 10px 10px;
+border-radius: 15px;
+background: url("../../img/psih.jpg");
+background-size: cover;
+background-position-y: center;
+
+
+}
+.pop-2{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    background: white;
+    padding: 10px 10px;
+    border-radius: 15px;
+    color: white;
+    background: url("../../img/funtastic.jpg");
+background-position-y: center;
+
+background-size: cover;
+}
+.pop-3{
+display: flex;
+align-items: center;
+width: 200px;
+height: 60px;
+background: white;
+padding: 10px 10px;
+border-radius: 15px;
+background: url("../../img/too.jpg");
+background-size: cover;
+
+
+}
+.pop-4{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    background: white;
+    padding: 10px 10px;
+    border-radius: 15px;
+    background: url("../../img/тфгср.jpg");
+background-size: cover;
+background-position-y: center;
+}
+
+.pop-5{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    background: white;
+    padding: 10px 10px;
+    border-radius: 15px;
+    background: url("../../img/story.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.pop-6{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    background: white;
+    padding: 10px 10px;
+    border-radius: 15px;
+    background: url("../../img/drama.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* option */
+
+.options{
+display: flex;
+align-items: center;
+justify-content: end;
+    select{
+        text-align: start;
+        outline: none;
+        padding: 5px 10px ;
+        color: black;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}

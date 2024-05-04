@@ -1,0 +1,83 @@
+header{
+    background: blue;
+}
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        width: 200px;   
+    }
+    nav{
+        display: flex;
+        
+        align-items: end;
+        gap: 40px;
+        a{
+            color: white;
+        }
+    }
+}
+.headerPages{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.admin{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.userBtn{
+background: transparent;
+border:none;
+font-size: 25px;
+color: white;
+}
+.basket{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.btnBasket{
+background: transparent;
+border:none;
+font-size: 25px;
+color: white;
+font-weight: 900;
+}
+.search{
+    display: flex;
+    align-items: center;
+    position: relative;
+    input{
+padding: 10px 10px;
+width: 300px;
+border: none;
+border-radius: 10px;
+outline: none;
+color: blue;
+font-size: 20px;
+font-family: sans-serif;
+    }
+    button{
+        position: absolute;
+        left: 270px;
+background: none;
+border: none;
+font-size: 25px;
+color: gray;
+    }
+}
+.addBook{
+    font-size: 25px;
+    color: white;
+    background: transparent;
+    border: none;
+    font-weight: 700;
+}
