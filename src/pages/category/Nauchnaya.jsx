@@ -13,12 +13,17 @@ const Nauchnaya = () => {
     return (
         <div className='nauchnaya'>
             <div className="container">
-                {filterNauk.map(el => (
-                    <>
+               <div className="nauca">
+               {
+               filterNauk.map(el => (
+                    <div className=' nauc'>
                 <img src={el.img} alt="" />
                 <h1>{el.name}</h1>
-                    </>
-                ))}
+                <h2>{el.price}</h2>
+                    </div>
+                ))
+                }
+               </div>
             </div>
         </div>
     );

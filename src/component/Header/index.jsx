@@ -9,7 +9,11 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import logo from "../../img/National_Book_Store_2016_logo.svg.png"
 
  const Header = ({setValue}) => {
-
+// function onKeyDownFunc(e) {
+//   if(e.key === "Enter") {
+//     nav("/Search")
+//   }
+// }
    let nav = useNavigate()
     return (
         <header id="header">
@@ -19,7 +23,11 @@ import logo from "../../img/National_Book_Store_2016_logo.svg.png"
            <div className="headerPages">
 
            <div className="search">
-            <input  type="text" onChange={(e) => setValue(e.target.value)} placeholder='Search'/>
+            <input onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                nav("/Search")
+              }
+            }} type="text" onChange={(e) => setValue(e.target.value)} placeholder='Search'/>
             <button onClick={() => {
                 nav("/Search")
             }} className="searchBtn"><CiSearch/></button>

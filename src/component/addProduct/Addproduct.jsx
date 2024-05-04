@@ -14,16 +14,28 @@ const Addproduct = () => {
 
 
 function hendleSubmit () {
-    let obj = {
-        img,
-        name,
-        price,
-        product,
-        category
+    if(img !== "" && name !== "" && price !== "" && product !== "" && category !==""){
+        let obj = {
+            img,
+            name,
+            price,
+            product,
+            category
+            
+            
+        }
+        addProduct(obj)
+        setCategory("")
+        setImg("")
+        setName("")
+        setPrice("")
+        setProduct("")
+    } 
+    else {
+        alert("arr")
+    }
         
-        
-            }
-            addProduct(obj)
+   
 
 }
 
@@ -32,9 +44,9 @@ function hendleSubmit () {
         <div id='addproduct'>
             <div className="container">
                 <div className="addproduct">
-                  <input type="text" onChange={(e) => setImg(e.target.value)} placeholder='Image' className="imgdiv"/>
+                  <input value={img} type="text" onChange={(e) => setImg(e.target.value)} placeholder='Image' className="imgdiv"/>
                     <div className="addinput">
-                        <input className='nameinput' type="text" onChange={(e) => setName(e.target.value)} placeholder='Product Name'/>
+                        <input value={name} className='nameinput' type="text" onChange={(e) => setName(e.target.value)} placeholder='Product Name'/>
                         <div className="addprice">
                             <select onChange={(e) => setCategory(e.target.value)} className='price-1'>
                             <option value="Психология">Психология</option>
@@ -45,12 +57,12 @@ function hendleSubmit () {
                                 <option value="Драма">Драма</option>
                             </select>
                             
-                               <input className='price' onChange={(e) => setPrice(e.target.value)} type="text" placeholder='price'/>
+                               <input value={price} className='price' onChange={(e) => setPrice(e.target.value)} type="text" placeholder='price'/>
 
                         </div>
-                        <input  className='ProductDescription' type="text" onChange={(e) => setProduct(e.target.value)}  placeholder='Product description...'/>
+                        <input  value={product} className='ProductDescription' type="text" onChange={(e) => setProduct(e.target.value)}  placeholder='Product description...'/>
                         <button className='savebtn'onClick={hendleSubmit} >SAVE</button>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>

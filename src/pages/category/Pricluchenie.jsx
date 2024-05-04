@@ -14,10 +14,10 @@ const Pricluchenie = () => {
             <div className="pri">
                {
                 filterPri.map((el) => (
-                    <>
+                    <div div className='proklucheniy'>
                     <img src={el.img} alt="" />
                     <h1>{el.name}</h1>
-                    </>
+                    </div >
                 ))
                }
             </div>

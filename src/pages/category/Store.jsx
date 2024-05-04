@@ -11,15 +11,17 @@ const Store = () => {
     return (
         <div className='store'>
             <div className="container">
+            <div className="store">
             {
              filterStore.map((el) => (
-               <>
+               <div className='stor'>
                 <img src={el.img} alt="" />
                 <h1>{el.name}</h1>
                 <h1>{el.price}</h1>
-               </>
+               </div>
              ))   
             }
+            </div>
             </div>
         </div>
     );

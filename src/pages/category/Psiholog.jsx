@@ -9,7 +9,7 @@ const Psiholog = () => {
     }, [])
     let filterPri = data.filter((el) => el.category == "Психлолгия")
     return (
-        <div className='psiholog'>
+        <div id='psiholog'>
             <div className="container">
               <div className="psiholog">
               {

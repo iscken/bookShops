@@ -10,16 +10,16 @@ const Basket = () => {
     return (
         <div id='basket'>
             <div className="container">
-                <div className="basket">
+                <div className="basket-blocks">
           
             {
                 bas.map((el) => el.map(e => (
-                    <>
+                    <div className='basket-block'>
                     <img src={e.img} alt="" />
                     <h1>{e.name}</h1>
-
                     <button className='deleteBasket' onClick={() => deletebtn(e.id)}>delete</button>
-                    </>
+
+                    </div>
                 )))
             }
                 </div>

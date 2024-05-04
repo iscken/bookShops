@@ -13,8 +13,10 @@ function Fantastic() {
     let filterNauk = data.filter(el => el.category == 'Фантастика')
     
     return (
-        <div className='fantastic'>
-           {
+        <div id='fantastic'>
+          <div className="container">
+            <div className="fantastic">
+            {
             filterNauk.map((el) => (
                 <div className="fan">
                     <img src={el.img} alt="" />
@@ -22,6 +24,9 @@ function Fantastic() {
                 </div>
             ))
            }
+            </div>
+          </div>
+
         </div>
     );
 }
